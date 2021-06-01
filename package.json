@@ -1,0 +1,17 @@
+{
+  "name": "jun-1-node-postgres",
+  "version": "1.0.1",
+  "description": "RESTful API with Node.js, Express, and PostgreSQL Part 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.6.0"
+  },
+  "devDependencies": {}
+}
