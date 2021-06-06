@@ -1,3 +1,5 @@
+const db = require('../../db');
+
 class Users {
     async create(name, email) {
         return await db.createUser(name, email);
@@ -11,8 +13,8 @@ class Users {
         return await db.getUsers(id);
     }
 
-    async update(id) {
-        return await db.updateUser(id);
+    async update(id, name, email) {
+        return await db.updateUser(id, name, email);
     }
 
     async delete(id) {

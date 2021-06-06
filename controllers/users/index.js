@@ -33,11 +33,25 @@ const getUserById = async (request, response) => {
 }
 
 const updateUser = async (request, response) => {
-    
+    const userID = parseInt(request.params.id);
+    const {name, email} = request.body;
+    try{
+        const res = await model.update(userID);
+        response.status(200).json(res);
+    } catch(error) {
+        response.status(500).send(error);
+    }
 }
 
 const deleteUser = async (request, response) => {
+    const userID = parseInt(request.params.id);
     
+    try{
+        const res = await model.update(userID);
+        response.status(200).json(res);
+    } catch(error) {
+        response.status(500).send(error);
+    }
 }
 
 module.exports = {
