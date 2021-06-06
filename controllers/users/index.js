@@ -1,5 +1,10 @@
 const createUser = async (request, response) => {
-
+    const {name, email} = request.body;
+    try{
+        response.status(201).send()
+    } catch(error) {
+        
+    }
 }
 
 const getUsers = async (request, response) => {
